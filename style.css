@@ -126,3 +126,64 @@ body {
     font-size: 16px;
 }
 
+/* mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+    width: 80vw;
+    height: max-content;
+    margin: auto;
+    }
+    
+    .container h1 {
+    font-size: 22px;
+    padding-top: 20px;
+    }
+    
+    .btn-group button {
+    width: 20vw;
+    height: 16vh;
+    max-width: none;
+    max-height: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+    }
+    
+    .btn-group button img {
+    width: 16vw;
+    max-width: 80px;
+    }
+    
+    .modal-content {
+    width: 80vw;
+    padding: 5vw;
+    }
+    
+    #closeModal {
+    padding: 2vw 4vw;
+    margin-top: 6vw;
+    }
+    
+    .modal-content p {
+    text-align: left;
+    padding-left: 20px;
+    }
+    
+    .display-msg {
+    margin-top: 10px;
+    }
+    
+    .winnermsg {
+    background-color: #4caf50;
+    margin-top: 30px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    }
+    
+    .message {
+    margin: 1vh;
+    font-size: 16px;
+    max-width: 100%;
+    padding: 2vw;
+    }
+    }
