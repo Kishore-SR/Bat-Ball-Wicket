@@ -1,6 +1,6 @@
 ## Bat Ball Wicket 🏏
 
-This is a simple game built to practice JavaScript. The game involves selecting between Bat, Ball, and Wicket, with basic game logic winner is decided.
+This is a simple game built to practice JavaScript. The game involves selecting between Bat, Ball, and Wicket, with basic logic to determine the winner.
 
 [![Project Link](https://img.shields.io/badge/Game%20Link-37a779?style=for-the-badge)](https://bat-ball-wicket.web.app/)
 
