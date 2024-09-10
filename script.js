@@ -27,3 +27,28 @@ function randomGen() {
     }
 }
 
+function handleButtonClick(value) {
+  document.querySelector(".usermsg").innerHTML = `Your choice: <b>${value}</b>`;
+  
+  // Displaying computer choice on screen
+  randomGen();
+  document.querySelector(".compmsg").innerHTML = `Computer choice: <b>${aiChoice}</b>`;
+  
+  // Deciding winner based on the game rules
+  if (value === aiChoice) {
+  winner = "Draw Match 🏁";
+  } else if ((value === "Bat" && aiChoice === "Ball") ||
+  (value === "Ball" && aiChoice === "Wicket") ||
+  (value === "Wicket" && aiChoice === "Bat")) {
+  winner = "Congrats, You Won 🎉";
+  } else {
+  winner = "Computer Won! 💻";
+  }
+  
+  document.querySelector(".winnermsg").innerHTML = winner;
+  }
+  
+  document.querySelectorAll(".btn-group button").forEach((button) => {
+  button.addEventListener("click", () => handleButtonClick(button.textContent.trim()));
+  });
+  
